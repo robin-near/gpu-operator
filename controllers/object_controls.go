@@ -2786,6 +2786,9 @@ func transformDriverManagerInitContainer(obj *appsv1.DaemonSet, driverManagerSpe
 		addPullSecrets(&obj.Spec.Template.Spec, driverManagerSpec.ImagePullSecrets)
 	}
 
+	container2 := findContainerByName(obj.Spec.Template.Spec.InitContainers, "setup-udev-rules")
+	container2.Image = managerImage
+
 	return nil
 }
 
