@@ -62,10 +62,10 @@ validator:
     env: []
 
 operator:
-  repository: nvcr.io/nvidia
+  repository: docker.io/robinnear
   image: gpu-operator
   # If version is not specified, then default is to use chart.AppVersion
-  version: v25.10.1
+  version: v25.10.1-nvswitch
   imagePullPolicy: IfNotPresent
   imagePullSecrets: []
   priorityClassName: system-node-critical
