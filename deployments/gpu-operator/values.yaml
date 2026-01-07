@@ -7,7 +7,7 @@ platform:
 
 nfd:
   enabled: true
-  nodefeaturerules: true
+  nodefeaturerules: false
 
 psa:
   enabled: false
@@ -516,7 +516,7 @@ ccManager:
   imagePullSecrets: []
   env:
     - name: CC_CAPABLE_DEVICE_IDS
-      value: "0x2339,0x2331,0x2330,0x2324,0x2322,0x233d"
+      value: "0x2339,0x2331,0x2330,0x2324,0x2322,0x233d,0x2335"
   resources: {}
 
 node-feature-discovery:

@@ -89,6 +89,15 @@ spec:
           matchExpressions:
             vendor: {op: In, value: ["10de"]}
             device: {op: In, value: ["2322"]}
+    - name: "NVIDIA H200 SXM"
+      labels:
+        "nvidia.com/gpu.H200.sxm": "true"
+        "nvidia.com/gpu.family": "hopper"
+      matchFeatures:
+        - feature: pci.device
+          matchExpressions:
+            vendor: {op: In, value: ["10de"]}
+            device: {op: In, value: ["2335"]}
     - name: "NVIDIA CC Enabled"
       labels:
         "nvidia.com/cc.capable": "true"
