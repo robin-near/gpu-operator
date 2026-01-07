@@ -24,7 +24,7 @@ spec:
       serviceAccountName: nvidia-vfio-manager
       initContainers:
         - name: setup-udev-rules
-          image: "FILLED BY THE OPERATOR"
+          image: "nvcr.io/nvidia/cloud-native/k8s-driver-manager:v0.9.1"
           imagePullPolicy: IfNotPresent
           command: ["/bin/sh", "-c"]
           args:
