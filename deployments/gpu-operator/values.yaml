@@ -52,7 +52,7 @@ validator:
   repository: nvcr.io/nvidia
   image: gpu-operator
   # If version is not specified, then default is to use chart.AppVersion
-  #version: ""
+  version: v25.10.1
   imagePullPolicy: IfNotPresent
   imagePullSecrets: []
   env: []
@@ -65,7 +65,7 @@ operator:
   repository: nvcr.io/nvidia
   image: gpu-operator
   # If version is not specified, then default is to use chart.AppVersion
-  #version: ""
+  version: v25.10.1
   imagePullPolicy: IfNotPresent
   imagePullSecrets: []
   priorityClassName: system-node-critical
@@ -398,7 +398,7 @@ nodeStatusExporter:
   repository: nvcr.io/nvidia
   image: gpu-operator
   # If version is not specified, then default is to use chart.AppVersion
-  #version: ""
+  version: v25.10.1
   imagePullPolicy: IfNotPresent
   imagePullSecrets: []
   resources: {}

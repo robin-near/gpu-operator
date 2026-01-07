@@ -58,7 +58,7 @@ data:
         # make sure device class is for NVIDIA GPU
         device_class_file=$(readlink -f "/sys/bus/pci/devices/$gpu/class")
         device_class=$(cat "$device_class_file")
-        [ "$device_class" = "0x030200" ] || [ "$device_class" = "0x030000" ] || return 1
+        [ "$device_class" = "0x030200" ] || [ "$device_class" = "0x030000" ] || [ "$device_class" = "0x068000" ] || return 1
         return 0
     }
 
