@@ -511,7 +511,7 @@ ccManager:
   defaultMode: "off"
   repository: docker.io/robinnear
   image: k8s-cc-manager
-  version: ppcie-1-distroless
+  version: ppcie-2-distroless
   imagePullPolicy: IfNotPresent
   imagePullSecrets: []
   env:
